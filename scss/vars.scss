@@ -1,0 +1,89 @@
+$btn-color: #ED6A60;
+$transition-btn: 500ms;
+
+
+%title{
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 46px;
+    @media (max-width: 960px) {
+        font-size: 35px;
+    }
+    @media (max-width: 480px) {
+        font-size: 30px;
+    }
+}
+
+
+@mixin btn (
+    $color: #fff, 
+    $color-hover: #fff,     
+    $border: $btn-color, 
+    $border-hover: none, 
+    $bg: $btn-color,
+    $bg-hover: #e14438){
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 0px;
+    border-radius: 100px;
+    min-width: 250px;
+
+    background: $bg;
+    color: $color;
+    border: $border; 
+
+    font-size: 18px;
+
+    @media (min-width: 1200PX){
+        transition: $transition-btn;    
+            &:hover{
+            background: $bg-hover;
+            color: $color-hover;
+            border: $border-hover;
+            transform: translateY(-5px);
+            }
+        }
+}
+
+
+%content-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #000;
+}
+
+%form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: 566px;
+}
+
+%input{
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 16px 40px;
+    width: 100%;  
+}
+
+%reg-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%form-politic{
+    text-align: center;
+    font-size: 14px;
+    max-width: 420px;
+    line-height: 16.1px;
+}

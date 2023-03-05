@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Arial';
+    src: url("/src/fonts/ArialMT/ArialMT.woff2") format("woff2"),
+        url("/src/fonts/ArialMT/ArialMT.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Arial Bold';
+    src: url('/src/fonts/ArialBold/Arial-BoldMT.woff2') format('woff2'),
+        url('/src/fonts/ArialBold/Arial-BoldMT.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
+  }
